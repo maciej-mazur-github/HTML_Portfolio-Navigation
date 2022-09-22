@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
     <style>
-		  //@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+      <!--@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap'); -->
 
 		:root {
 		  --color-white: #f3f3f3;
@@ -103,7 +103,7 @@
 
 		.header {
 		  padding: 0 0.625rem;
-		  margin-bottom: 1.875rem;
+		  margin-bottom: 10rem;
 		}
 
 		.description {
@@ -128,6 +128,7 @@
 		  background: var(--color-darkblue-alpha);
 		  padding: 2.5rem 0.625rem;
 		  border-radius: 0.25rem;
+		  margin: 1rem 0 1rem 0;
 		}
 
 		@media (min-width: 480px) {
@@ -136,10 +137,7 @@
 		  }
 		}
 
-		.form-group {
-		  margin: 0 auto 1.25rem auto;
-		  padding: 0.25rem;
-		}
+	
 
 		.form-control {
 		  display: block;
@@ -184,18 +182,51 @@
 		  border-radius: 2px;
 		  cursor: pointer;
 		}
+		
+		
+		
+		.topic-general {
+		  background: hsla(240, 30%, 58%, 0.56);
+		  padding: 1rem 0.625rem;
+		  border-radius: 0.25rem;
+		  margin: 1rem 0 1rem 0;
+		}
+		
+		.paragraph-title {
+			text-align: center;
+			font-size: 1.5em;
+		}
+		
+		.topic-title {
+		  text-align: center;
+		}
 
     </style>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <h1 id="title" class="text-center">My Self-study Portfolio Navigation Page</h1>
+        <h1 id="title" class="text-center">Welcome to my Self-study Projects<br>Portfolio Navigation Panel</h1>
         <p id="description" class="description text-center">
-          Thank you for taking the time to help us improve the platform
+          Thank you for taking the time to visit it
         </p>
       </header>
-      <form id="survey-form">
+	  
+	  
+	  <form id="survey-form">
+		<p class="paragraph-title">Java Projects <br>with commit history</p>
+	    
+        <div class="topic-general">
+		  <p class="topic-title">Arrays, Lists, Autoboxing and Unboxing</p>
+        </div>
+      </form>
+      
+	  
+	  
+	  
+	  
+	  
+	  <form id="survey-form">
         <div class="form-group">
           <label id="name-label" for="name">Name</label>
           <input
@@ -397,6 +428,8 @@
           </button>
         </div>
       </form>
+	  
+	  
     </div>
   </body>
 </html>
