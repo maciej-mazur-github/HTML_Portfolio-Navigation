@@ -199,11 +199,36 @@
 		
 		.topic-title {
 		  text-align: center;
+		  margin-bottom: 2em;
+		  font-size: 1.5em;
 		}
+		
+		a { 
+		  text-decoration: none; 
+		  color: #00c5da;
+		  font-size: 1.1em;
+		}
+		
+		a:hover { 
+		  text-decoration: underline; 
+		  
+		}
+		
+		.project-description {
+		  color: white;
+		  font-size: 0.95em;
+		  text-align: left;
+		  margin: 5px 10% 20px 3%;
+  
+		}
+		
+		#more {display: none;}
+
 
     </style>
   </head>
   <body>
+
     <div class="container">
       <header class="header">
         <h1 id="title" class="text-center">Welcome to my Self-study Projects<br>Portfolio Navigation Panel</h1>
@@ -217,7 +242,60 @@
 		<p class="paragraph-title">Java Projects <br>with commit history</p>
 	    
         <div class="topic-general">
-		  <p class="topic-title">Arrays, Lists, Autoboxing and Unboxing</p>
+		  <p class="topic-title">Arrays, Lists, Autoboxing and Unboxing Based</p>
+		  
+		  <div>
+		    <a href="https://github.com/maciej-mazur-github/JAVA_Banking-Simulation" target="_blank">Banking Simulation</a>
+			<p class="project-description">Create a bank. Add and/or remove specific branches, customers or transactions. List all customers within a specific branch or all bank customers<span id="dots">...</span><span id="more">if you will. Safety measures taken to avoid adding a duplicated branch, to remove a non-existing branch, to add (or remove) a customer to non-existing branch, to duplicate a customer within the same branch, to add a transaction to a non-existing branch or non-existing customer, to remove a non-existing customer from a branch.</span></p>
+			<button onclick="myFunction()" id="myBtn">Read more</button>
+			
+			<script>
+				function myFunction() {
+				  var dots = document.getElementById("dots");
+				  var moreText = document.getElementById("more");
+				  var btnText = document.getElementById("myBtn");
+
+				  if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "Read more"; 
+					moreText.style.display = "none";
+				  } else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less"; 
+					moreText.style.display = "inline";
+				  }
+			}
+			</script>
+
+		  </div>
+		  
+		  <div>
+			<a></a>
+		  </div>
+		  
+		  <div>
+		    <a></a>
+		  </div>
+		  
+		  <div>
+		    <a></a>
+		  </div>
+		  
+		  <div>
+		    <a></a>
+		  </div>
+		  
+		  <div>
+		    <a></a>
+		  </div>
+		  
+		  <div>
+		    <a></a>
+		  </div>
+		  
+		  <div>
+		    <a></a>
+		  </div>
         </div>
       </form>
       
@@ -226,208 +304,7 @@
 	  
 	  
 	  
-	  <form id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Enter your Email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number"
-            >Age<span class="clue">(optional)</span></label
-          >
-          <input
-            type="number"
-            name="age"
-            id="number"
-            min="10"
-            max="99"
-            class="form-control"
-            placeholder="Age"
-          />
-        </div>
-        <div class="form-group">
-          <p>Which option best describes your current role?</p>
-          <select id="dropdown" name="role" class="form-control" required>
-            <option disabled selected value>Select current role</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <p>Would you recommend freeCodeCamp to a friend?</p>
-          <label>
-            <input
-              name="user-recommend"
-              value="definitely"
-              type="radio"
-              class="input-radio"
-              checked
-            />Definitely</label
-          >
-          <label>
-            <input
-              name="user-recommend"
-              value="maybe"
-              type="radio"
-              class="input-radio"
-            />Maybe</label
-          >
-
-          <label
-            ><input
-              name="user-recommend"
-              value="not-sure"
-              type="radio"
-              class="input-radio"
-            />Not sure</label
-          >
-        </div>
-
-        <div class="form-group">
-          <p>What is your favorite feature of freeCodeCamp?</p>
-          <select id="most-like" name="mostLike" class="form-control" required>
-            <option disabled selected value>Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="openSource">Open Source</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <p>
-            What would you like to see improved?
-            <span class="clue">(Check all that apply)</span>
-          </p>
-
-          <label
-            ><input
-              name="prefer"
-              value="front-end-projects"
-              type="checkbox"
-              class="input-checkbox"
-            />Front-end Projects</label
-          >
-          <label>
-            <input
-              name="prefer"
-              value="back-end-projects"
-              type="checkbox"
-              class="input-checkbox"
-            />Back-end Projects</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="data-visualization"
-              type="checkbox"
-              class="input-checkbox"
-            />Data Visualization</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="challenges"
-              type="checkbox"
-              class="input-checkbox"
-            />Challenges</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="open-source-community"
-              type="checkbox"
-              class="input-checkbox"
-            />Open Source Community</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="gitter-help-rooms"
-              type="checkbox"
-              class="input-checkbox"
-            />Gitter help rooms</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="videos"
-              type="checkbox"
-              class="input-checkbox"
-            />Videos</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="city-meetups"
-              type="checkbox"
-              class="input-checkbox"
-            />City Meetups</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="wiki"
-              type="checkbox"
-              class="input-checkbox"
-            />Wiki</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="forum"
-              type="checkbox"
-              class="input-checkbox"
-            />Forum</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="additional-courses"
-              type="checkbox"
-              class="input-checkbox"
-            />Additional Courses</label
-          >
-        </div>
-
-        <div class="form-group">
-          <p>Any comments or suggestions?</p>
-          <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            placeholder="Enter your comment here..."
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">
-            Submit
-          </button>
-        </div>
-      </form>
+	  
 	  
 	  
     </div>
