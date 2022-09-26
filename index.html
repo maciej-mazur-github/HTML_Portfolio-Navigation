@@ -124,12 +124,13 @@
 
 		/* form */
 
-		form {
+		<!--
+		#wrapper {
 		  background: var(--color-darkblue-alpha);
 		  padding: 2.5rem 0.625rem;
 		  border-radius: 0.25rem;
 		  margin: 1rem 0 1rem 0;
-		}
+		}-->
 
 		@media (min-width: 480px) {
 		  form {
@@ -172,16 +173,6 @@
 		  padding: 0.625rem;
 		  resize: vertical;
 		}
-
-		.submit-button {
-		  display: block;
-		  width: 100%;
-		  padding: 0.75rem;
-		  background: var(--color-green);
-		  color: inherit;
-		  border-radius: 2px;
-		  cursor: pointer;
-		}
 		
 		
 		
@@ -189,7 +180,7 @@
 		  background: hsla(240, 30%, 58%, 0.56);
 		  padding: 1rem 0.625rem;
 		  border-radius: 0.25rem;
-		  margin: 1rem 0 1rem 0;
+		  margin: 0.5rem 1rem 1rem 1rem;
 		}
 		
 		.paragraph-title {
@@ -199,7 +190,7 @@
 		
 		.topic-title {
 		  text-align: center;
-		  margin-bottom: 2em;
+		  margin-bottom: 1.5em;
 		  font-size: 1.5em;
 		}
 		
@@ -218,11 +209,29 @@
 		  color: white;
 		  font-size: 0.95em;
 		  text-align: left;
-		  margin: 5px 10% 20px 3%;
+		  margin: 5px 10% 30px 3%;
   
 		}
 		
-		#more {display: none;}
+		.more {
+		  display: none;
+		}
+		
+		.expand-collapse {
+		  display: inline;
+		  text-decoration: none; 
+		  color: #00c5da;
+		  font-size: 1em;
+		  background-color: transparent;
+		  align: left;
+		  padding: 0 0 0 5px;
+		  margin: 0;
+		  cursor: pointer;
+		}
+		
+		.expand-collapse:hover { 
+		  text-decoration: underline;  
+		}
 
 
     </style>
@@ -238,75 +247,79 @@
       </header>
 	  
 	  
-	  <form id="survey-form">
+	  <div>
 		<p class="paragraph-title">Java Projects <br>with commit history</p>
 	    
-        <div class="topic-general">
+        <div id="wrapper">
 		  <p class="topic-title">Arrays, Lists, Autoboxing and Unboxing Based</p>
+		    <div class="topic-general">
+			  <div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Banking-Simulation" target="_blank">Banking Simulation</a>
+				<p class="project-description">Create a bank. Add and/or remove specific branches, customers or transactions. List all customers within a specific branch or all bank customers<span class="dots">...</span><span class="more">if you will. Safety measures taken to avoid adding a duplicated branch, to remove a non-existing branch, to add (or remove) a customer to non-existing branch, to duplicate a customer within the same branch, to add a transaction to a non-existing branch or non-existing customer, to remove a non-existing customer from a branch.</span><span class="expand-collapse">Read more</span></p>
+			  </div>
+			  
+			  <div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Finding-Minimum-Element-In-Array" target="_blank">Finding Minimum Element In Array</a>
+				<p class="project-description">Simple minimum value finder working on an array built by the user. The array is built dynamicaly - the user provides consecutive integer values, also decides about the size of the array.</p>
+			  </div>
+				
+			  <div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Grocery-List-Operations" target="_blank">Grocery List Operations</a>
+				<p class="project-description">Grocery shopping list operations simulator. Add, remove or modify any item in the list. Also search for a specific item if you will to see if it is present. GroceryList class<span class="dots">...</span><span class="more"> created based on ArrayList of Strings. Item removal attainable by item name or by its position number in the list. The code is guarded from attempts to remove non-existing items. All these apply to modifying items in the list too.</span><span class="expand-collapse">Read more</span></p>
+			  </div>
+			  
+			  <div>
+				<a></a>
+			  </div>
 		  
-		  <div>
-		    <a href="https://github.com/maciej-mazur-github/JAVA_Banking-Simulation" target="_blank">Banking Simulation</a>
-			<p class="project-description">Create a bank. Add and/or remove specific branches, customers or transactions. List all customers within a specific branch or all bank customers<span id="dots">...</span><span id="more">if you will. Safety measures taken to avoid adding a duplicated branch, to remove a non-existing branch, to add (or remove) a customer to non-existing branch, to duplicate a customer within the same branch, to add a transaction to a non-existing branch or non-existing customer, to remove a non-existing customer from a branch.</span></p>
-			<button onclick="myFunction()" id="myBtn">Read more</button>
+		      <div>
+		        <a></a>
+		      </div>
+		  
+		      <div>
+		        <a></a>
+		      </div>
+		  
+		      <div>
+		        <a></a>
+		      </div>
+		  
+		      <div>
+		        <a></a>
+		      </div>
+		  
+		      <div>
+		        <a></a>
+		      </div>
+		    </div>
 			
-			<script>
-				function myFunction() {
-				  var dots = document.getElementById("dots");
-				  var moreText = document.getElementById("more");
-				  var btnText = document.getElementById("myBtn");
-
-				  if (dots.style.display === "none") {
-					dots.style.display = "inline";
-					btnText.innerHTML = "Read more"; 
-					moreText.style.display = "none";
-				  } else {
-					dots.style.display = "none";
-					btnText.innerHTML = "Read less"; 
-					moreText.style.display = "inline";
-				  }
-			}
-			</script>
-
-		  </div>
 		  
-		  <div>
-			<a></a>
-		  </div>
-		  
-		  <div>
-		    <a></a>
-		  </div>
-		  
-		  <div>
-		    <a></a>
-		  </div>
-		  
-		  <div>
-		    <a></a>
-		  </div>
-		  
-		  <div>
-		    <a></a>
-		  </div>
-		  
-		  <div>
-		    <a></a>
-		  </div>
-		  
-		  <div>
-		    <a></a>
-		  </div>
         </div>
-      </form>
-      
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-    </div>
+      </div>
+     </div>
+	 
+	 <script>
+			document.getElementById('wrapper').addEventListener('click', e => {
+			  const expand = 'Read more'
+			  const collapse = 'Read less'
+			  
+			  if (!e.target.classList.contains('expand-collapse')) return
+			  
+			  const parent = e.target.parentNode
+			  const dots = parent.getElementsByClassName('dots')[0]
+			  const more = parent.getElementsByClassName('more')[0]
+			  
+			  if (e.target.textContent === expand) {
+				e.target.textContent = collapse
+				dots.style.display = 'none'
+				more.style.display = 'inline'
+			  }
+			  else {
+				e.target.textContent = expand
+				dots.style.display = 'inline'
+				more.style.display = 'none'
+			  }
+			})
+	</script>
   </body>
 </html>
