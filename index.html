@@ -124,13 +124,13 @@
 
 		/* form */
 
-		<!--
+		
 		#wrapper {
 		  background: var(--color-darkblue-alpha);
 		  padding: 2.5rem 0.625rem;
 		  border-radius: 0.25rem;
 		  margin: 1rem 0 1rem 0;
-		}-->
+		}
 
 		@media (min-width: 480px) {
 		  form {
@@ -176,7 +176,7 @@
 		
 		
 		
-		.topic-general {
+		.topic-body {
 		  background: hsla(240, 30%, 58%, 0.56);
 		  padding: 1rem 0.625rem;
 		  border-radius: 0.25rem;
@@ -190,7 +190,7 @@
 		
 		.topic-title {
 		  text-align: center;
-		  margin-bottom: 1.5em;
+		  margin-bottom: 0.9em;
 		  font-size: 1.5em;
 		}
 		
@@ -238,7 +238,7 @@
   </head>
   <body>
 
-    <div class="container">
+    <div class="container" id="clickActions">
       <header class="header">
         <h1 id="title" class="text-center">Welcome to my Self-study Projects<br>Portfolio Navigation Panel</h1>
         <p id="description" class="description text-center">
@@ -252,7 +252,7 @@
 	    
         <div id="wrapper">
 		  <p class="topic-title">Arrays, Lists, Autoboxing and Unboxing Based</p>
-		    <div class="topic-general">
+		    <div class="topic-body">
 			  <div>
 				<a href="https://github.com/maciej-mazur-github/JAVA_Banking-Simulation" target="_blank">Banking Simulation</a>
 				<p class="project-description">Create a bank. Add and/or remove specific branches, customers or transactions. List all customers within a specific branch or all bank customers<span class="dots">...</span><span class="more"> if you need. Safety measures were taken to avoid adding a duplicated branch, to remove a non-existent branch, to add (or remove) a customer to a non-existent branch, to duplicate a customer within the same branch, to add a transaction to a non-existent branch or non-existent customer, to remove a non-existent customer from a branch.</span><span class="expand-collapse">Read more</span></p>
@@ -297,10 +297,120 @@
 		  
         </div>
       </div>
+	  
+	  
+	  <div id="wrapper">
+		  <p class="topic-title">Control Flow Statements, Algorithmic Exercises</p>
+		    <div class="topic-body">
+			  <div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_All-Factors" target="_blank">All Factors</a>
+				<p class="project-description">Very simple factor printer for non-negative integer numbers.</p>
+			  </div>
+			  
+			  <div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Diagonal-Star" target="_blank">Diagonal Star</a>
+				<p class="project-description">ASCII graphics diagonal star (actually crossed square) printer for squares of size no less than 5.</p>
+			  </div>
+				
+			  <div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Digit-Sum-Calculator" target="_blank">Digit Sum Calculator</a>
+				<p class="project-description">Simple program summing all the digits of the entered integer number no less than 10.</p>
+			  </div>
+			  
+			  <div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Even-Digit-Sum" target="_blank">Even Digit Sum</a>
+				<p class="project-description">Simple program similar to "Digit Sum Calculator" but summing even digits only of the entered integer number no less than 0.</p>
+			  </div>
+		  
+		      <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_First_And_Last_Digit_Sum" target="_blank">First And Last Digit Sum</a>
+				<p class="project-description">Simple program summing the least and the most significant digit of the entered non-negative integer number.</p>
+		      </div>
+		  
+		      <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Flour-Pack-Problem" target="_blank">Flour Pack Problem</a>
+				<p class="project-description">Pretty creative and optimized approach to resolving the Flour Pack Problem quoted below<span class="dots">...</span><span class="more">:<br><br>
+				"Write a method named canPack with three parameters of type int named bigCount, smallCount, and goal.<br>
+				The parameter bigCount represents the count of big flour bags (5 kilos each). The parameter smallCount represents the count of small flour bags (1 kilo each). The parameter goal represents the goal amount of kilos of flour needed to assemble a package. Therefore, the sum of the kilos of bigCount and smallCount must be at least equal to the value of goal. The method should return true if it is possible to make a package with goal kilos of flour. If the sum is greater than goal, ensure that only full bags are used towards the goal amount. <br><br>
+				For example, if goal = 9, bigCount = 2, and smallCount = 0, the method should return false since each big bag is 5 kilos and cannot be divided. However, if goal = 9, bigCount = 1, and smallCount = 5, the method should return true because of 1 full bigCount bag and 4 full smallCount bags equal goal, and it's okay if there are additional bags left over.<br><br>
+
+				If any of the parameters are negative, return false."</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+		  
+		      <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Greatest-Common-Divisor" target="_blank">Greatest Common Divisor</a>
+				<p class="project-description">Simple sorter of integer arrays. Build an array dynamically until the number of elements reaches the preset capacity or until you enter any non-numeric value. The object<span class="dots">...</span><span class="more"> of class ArraySorter will then automatically sort (Bubble Sort mechanism based) the entered array and will comprise both the initial and the sorted array. The size of the sorted array will be optimized in terms of size to reflect the actual number of elements (not necessarily the preset capacity). You can then print whichever array you want unless they are empty.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+		  
+		      <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Input-Calculator" target="_blank">Input Calculator</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Largest-Prime" target="_blank">Largest Prime</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Last-Digit-Checker" target="_blank">Last Digit Checker</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Minimum-And-Maximum-User-Input-Finder" target="_blank">Minimum And Maximum User Input Finder</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Number-Of-Days-In-Month" target="_blank">Number of days in month</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Number-Palindrome" target="_blank">Number palindrome</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Number-To-Words" target="_blank">Number To Words</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Paint-Job-Problem" target="_blank">Paint Job Problem</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Perfect-Number" target="_blank">Perfect Number</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Reading-User-Input" target="_blank">Reading User Input</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Shared-Digit" target="_blank">Shared digit</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+			  <div>
+		        <a href="https://github.com/maciej-mazur-github/JAVA_Sum-Odd" target="_blank">Sum Odd</a>
+				<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
+		      </div>
+			  
+		    </div>
+			
+		  
+        </div>
+	  
      </div>
 	 
 	 <script>
-			document.getElementById('wrapper').addEventListener('click', e => {
+			document.getElementById('clickActions').addEventListener('click', e => {
 			  const expand = 'Read more'
 			  const collapse = 'Read less'
 			  
