@@ -124,7 +124,7 @@
 		/* form */
 
 
-		#wrapper1, #wrapper2, #wrapper3  {
+		#wrapper1, #wrapper2, #wrapper3, #wrapper4  {
 		  background: var(--color-darkblue-alpha);
 		  padding: 2.5rem 0.625rem;
 		  border-radius: 0.25rem;
@@ -302,6 +302,12 @@
 		<p class="topic-title">Control Flow Statements, Algorithmic Exercises</p>
 		<div class="topic-body">
 			<div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Merge-Sort-Implementation" target="_blank">Merge Sort Implementation</a>
+				<p class="project-description">Program implementing the interesting and pretty sophisticated Merge Sort algorithm based on the recursion. The array of integer numbers can be sorted in ascending<span class="dots">...</span><span class="more"> order, starting with dividing the input array into 2 halves, which are then proceeded further and merged (actually sorted) accordingly using a recursive mechanism. There are 2 overloaded versions of sort() method used - one of them public, another one private (called by the public one) to let the user avoid the necessity to enter the start and the end index of the array beside the reference to the actual array. i.e. instead of calling sort(arr[], 0, 10) it is sufficient to call sort(arr[]) .</span><span class="expand-collapse">Read more</span></p>
+			</div>
+
+
+			<div>
 				<a href="https://github.com/maciej-mazur-github/JAVA_All-Factors" target="_blank">All Factors</a>
 				<p class="project-description">Very simple factor printer for non-negative integer numbers.</p>
 			</div>
@@ -475,141 +481,45 @@
 			</div>
 
 			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Digit-Sum-Calculator" target="_blank">Digit Sum Calculator</a>
-				<p class="project-description">Simple program summing all the digits of the entered integer number no less than 10.</p>
+				<a href="https://github.com/maciej-mazur-github/JAVA_LinkedList-Implementation" target="_blank">LinkedList Implementation</a>
+				<p class="project-description">Pretty sophisticated implementation of the LinkedList. The same abstract class Item and the same interface List have been used as in the implementation of<span class="dots">...</span><span class="more"> Binary Search Tree. Method chaining and items values comparison have been used extensively. Removal of any item is based on finding the item in the Linked List first. When traversing the list, comas are only added after all items except after the last one. Further actions depend on the result of containsItem method. The method containsItem exists in 2 overloaded versions. All methods are non-recursive.</span><span class="expand-collapse">Read more</span></p>
 			</div>
 
 			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Even-Digit-Sum" target="_blank">Even Digit Sum</a>
-				<p class="project-description">Simple program similar to "Digit Sum Calculator" but summing even digits only of the entered integer number no less than 0.</p>
+				<a href="https://github.com/maciej-mazur-github/JAVA_OnClick-Listener-Simulation" target="_blank">Onclick Listener Simulation</a>
+				<p class="project-description">Simple program simulating onclick actions. In an infinite loop it checks users choices. When the user choses "1" (simulating that some element has been clicked)<span class="dots">...</span><span class="more"> the program checks whether the onClickListener has been set or not. Inner interface OnClickListener was declared in Button class and then Button method setOnClickListener() is called with an argument being an anonymous class overriding OnClickListener interface's method onClick().</span><span class="expand-collapse">Read more</span></p>
 			</div>
 
 			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_First_And_Last_Digit_Sum" target="_blank">First And Last Digit Sum</a>
-				<p class="project-description">Simple program summing the least and the most significant digit of the entered non-negative integer number.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Flour-Pack-Problem" target="_blank">Flour Pack Problem</a>
-				<p class="project-description">Pretty creative and optimized approach to resolving the Flour Pack Problem quoted below<span class="dots">...</span><span class="more">:<br><br>
-				"Write a method named canPack with three parameters of type int named bigCount, smallCount, and goal.<br>
-				The parameter bigCount represents the count of big flour bags (5 kilos each). The parameter smallCount represents the count of small flour bags (1 kilo each). The parameter goal represents the goal amount of kilos of flour needed to assemble a package. Therefore, the sum of the kilos of bigCount and smallCount must be at least equal to the value of goal. The method should return true if it is possible to make a package with goal kilos of flour. If the sum is greater than goal, ensure that only full bags are used towards the goal amount. <br><br>
-				For example, if goal = 9, bigCount = 2, and smallCount = 0, the method should return false since each big bag is 5 kilos and cannot be divided. However, if goal = 9, bigCount = 1, and smallCount = 5, the method should return true because of 1 full bigCount bag and 4 full smallCount bags equal goal, and it's okay if there are additional bags left over.<br><br>
-
-				If any of the parameters are negative, return false."</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Greatest-Common-Divisor" target="_blank">Greatest Common Divisor</a>
-				<p class="project-description">Greatest Common Divisor finder. Algorithm based mainly on checking the rest of the division.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Input-Calculator" target="_blank">Input Calculator</a>
-				<p class="project-description">Simple program summing and averaging integer numbers entered by the user. Numbers are entered as long as any non-integer character is provided.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Largest-Prime" target="_blank">Largest Prime</a>
-				<p class="project-description">Simple calculator using mathematical optimizations to find the largest prime factor of any integer number entered that is not less than 2.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Last-Digit-Checker" target="_blank">Last Digit Checker</a>
-				<p class="project-description">Simple program checking whether the 3 entered integer numbers have all the exact same last digit and whether they all belong to the range <10; 1000></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Minimum-And-Maximum-User-Input-Finder" target="_blank">Minimum And Maximum User Input Finder</a>
-				<p class="project-description">Simple program returning the minimum and maximum number entered by the user. The user enters any integer numbers as long as any non-integer value<span class="dots">...</span><span class="more"> is provided. When it happens, the infinite loop breaks and the program returns a message informing of the minimum and maximum values earlier entered.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Number-Of-Days-In-Month" target="_blank">Number of days in month</a>
-				<p class="project-description">Simple program returning the amount of days in a given month of a given year. The code takes care of February, taking into account whether the given year is a leap one or not.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Number-Palindrome" target="_blank">Number palindrome</a>
-				<p class="project-description">Simple program that can reverse the order of integer number digits and also can check whether the entered number is a palindrome (reversed number is equal to the initial one) or not.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Number-To-Words" target="_blank">Number To Words</a>
-				<p class="project-description">Simple program that can count the amount of digits in a non-negative integer number, convert its digits to their string equivalents/names and can also reverse the number (e.g. 1325 -> 5231).</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Paint-Job-Problem" target="_blank">Paint Job Problem</a>
-				<p class="project-description">Resolution to an interesting algorithmic problem described extensively as follows:<br>
-
-					"Bob is a wall painter<span class="dots">...</span><span class="more"> and he needs your help. You have to write a program that helps Bob calculate how many buckets of paint he needs to buy before going to work. Bob might also have some extra buckets at home. He also knows the area that he can cover with one bucket of paint.<br><br>
-
-				1. Write a method named getBucketCount with 4 parameters. The first parameter should be named width of type double. This parameter represents the width of the wall.
-				The second parameter should be named height of type double. This parameter represents the height of the wall.
-				The third parameter should be named areaPerBucket. This parameter represents the area that can be covered with one bucket of paint.
-				The fourth parameter should be named extraBuckets. This parameter represents the bucket count that Bob has at home.
-				The method needs to return a value of type int that represents the number of buckets that Bob needs to buy before going to work. To calculate the bucket count, refer to the notes below.
-				If one of the parameters width, height or areaPerBucket is less or equal to 0 or if extraBuckets is less than 0, the method needs to return -1 to indicate an invalid value.
-				If all parameters are valid, the method needs to calculate the number of buckets and return it.<br><br>
-
-				Examples of input/output: <br>
-					getBucketCount(-3.4, 2.1, 1.5, 2); → should return -1 since the width parameter is invalid<br>
-					getBucketCount(3.4, 2.1, 1.5, 2); → should return 3 since the wall area is 7.14, a single bucket can cover an area of 1.5 and Bob has 2 extra buckets home.<br>
-					getBucketCount(2.75, 3.25, 2.5, 1); → should return 3 since the wall area is 8.9375, a single bucket can cover an area of 2.5 and Bob has 1 extra bucket at home.<br><br>
-
-				2. Bob does not like to enter 0 for the extraBuckets parameter so he needs another method.
-				Write another overloaded method named getBucketCount with 3 parameters namely width, height, and areaPerBucket (all of type double).
-				This method needs to return a value of type int that represents the number of buckets that Bob needs to buy before going to work. To calculate the bucket count, refer to the notes below.
-				If one of the parameters width, height or areaPerBucket is less or equal to 0, the method needs to return -1 to indicate an invalid value.
-				If all parameters are valid, the method needs to calculate the number of buckets and return it.<br><br>
-
-				Examples of input/output: <br>
-					getBucketCount(-3.4, 2.1, 1.5); → should return -1 since the width parameter is invalid<br>
-					getBucketCount(3.4, 2.1, 1.5); → should return 5 since the wall area is 7.14, and a single bucket can cover an area of 1.5.<br>
-					getBucketCount(7.25, 4.3, 2.35); → should return 14 since the wall area is 31.175, and a single bucket can cover an area of 2.35.<br><br>
-
-				3. In some cases, Bob does not know the width and height of the wall but he knows the area of a wall. He needs you to write another method.
-				Write another overloaded method named getBucketCount with 2 parameters namely, area and areaPerBucket (both of type double).
-				The method needs to return a value of type int that represents the number of buckets that Bob needs to buy before going to work. To calculate the bucket count, refer to the notes below.
-				If one of the parameters area or areaPerBucket is less or equal to 0, the method needs to return -1to indicate an invalid value.
-				If all parameters are valid, the method needs to calculate the number of buckets and return it.<br><br>
-
-				Examples of input/output: <br>
-					getBucketCount(3.4, 1.5); → should return 3 since the area is 3.4 and a single bucket can cover an area of 1.5<br>
-					getBucketCount(6.26, 2.2); → should return 3 since the wall area is 6.26 and a single bucket can cover an area of 2.2.<br>
-					getBucketCount(3.26, 0.75); → should return 5 since the wall area is 3.26, and a single bucket can cover an area of 0.75 .<br><br>
-
-				Do your best to help Bob"
-				</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Perfect-Number" target="_blank">Perfect Number</a>
-				<p class="project-description">Simple program checking whether the entered integer number no less than 1 is a perfect number (meaning that this number is equal to the sum of all its divisors).</p>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Simple-Game-With-Interfaces" target="_blank">Simple Game With Interfaces</a>
+				<p class="project-description">Simple game simulator being actually an exercise in using interfaces.</p>
 			</div>
 
 
+		</div>
+
+
+	</div>
+
+
+	<div id="wrapper4">
+		<p class="topic-title">Java Collections</p>
+		<div class="topic-body">
 			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Shared-Digit" target="_blank">Shared digit</a>
-				<p class="project-description">Simple program checking whether two 2-digit integer numbers comprise at least one common digit (not necessarily at the same position). Nested "while" loops<span class="dots">...</span><span class="more"> have been used to compare each digit of the first argument with each digit of the second one, however as soon as a match is found, the program ends, so the algorithm works optimally and avoids reduntant checks.</span><span class="expand-collapse">Read more</span></p>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Adventure-Game" target="_blank">Adventure Game</a>
+				<p class="project-description">Simulation of a "maze runner" style game. HashMaps have been used in a pretty creative way. There is an immutable class Location of which each object contains its own<span class="dots">...</span><span class="more"> HashMap with exits, mapping direction string IDs (S, N, W, E and Q) with their corresponding locationID numbers, e.g., if you are currently in the location #1 and if you choose to go North, then you will reach the location #5 (please see the attached .png file in the repository). There is also another class used, AdventureGame, that contains 2 other HashMaps – ‘locations’ and ‘directionsVocabulary’. HashMap "locations" contains a mapping between each location's integer ID and the corresponding object of class Location (the latter one basically binding information on given location's possible exit IDs and to which locations these exits lead). HashMap ‘directionsVocabulary’ plays a role of mapping keywords representing directions of the world (SOUTH, NORTH etc.) with their 1-character IDs (S, N etc.). The usage of toUpperCase() and splitting user's string input (when asked in which direction they want to go) allows the program to properly process not only short, case-sensitive answers like S, N, but also the answers like "I now need to go south" (as this answer contains the keyword "south"). Both HashMaps 'locations' and 'directionsVocabulary' are fully initialized by AdventureGame's constructor. Each location in 'locations' HashMap contains Q->0 mapping which allows the user to break program's main infinite loop and hence to end the program whenever 'Q' or the keyword 'quit' is entered.</span><span class="expand-collapse">Read more</span></p>
+			</div>
+
+
+
+			<div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Solar-System" target="_blank">Solar System</a>
+				<p class="project-description">Pretty simple program showing the mechanics of HashMap and HashSet, based on Solar Systems heavenly bodies (planets and their moons). The class HeavenlyBody has<span class="dots">...</span><span class="more"> Object methods hashCode() and equals(Object) overridden so that the HashMap representing the whole Solar System and the HashSet representing the set of planets can work properly. The program shows that there can be no value duplicates in HashSets and also that there can be no key duplicates in HashMap but value duplicates are allowed at the same time. E.g. there is an entry added to the solarSystem HashMap several times with the key "Jupiter" but each time with different value (HeavenlyBody class object) which eventually results in only one entry existing in this HashMap of key "Jupiter" and of the last added HeavenlyBody value.</span><span class="expand-collapse">Read more</span></p>
 			</div>
 
 			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Sum-Odd" target="_blank">Sum Odd</a>
-				<p class="project-description">Simple program returning the sum of all odd positive numbers belonging to the specified range (double inclusive).</p>
-			</div>
-
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Even-Numbers-Printer" target="_blank">Even Numbers Printer</a>
-				<p class="project-description">Simple program printing at most 5 prime numbers in a given range, based on rests of the division.</p>
-			</div>
-
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Seconds-And-Minutes" target="_blank">Seconds And Minutes</a>
-				<p class="project-description">Pretty nice program converting the entered amount of minutes and seconds (in a form of numbers) to string representing the amount of hours, minutes and<span class="dots">...</span><span class="more"> seconds accordingly. Whenever it turns out that any of those amounts is a 1-digit number, the program adds a leading “0” to that, e.g., “5” will be turned to “05”. There is also an overloaded version of the converting function, operating on the entered amount seconds only (no minutes), leading to the exact same results.</span><span class="expand-collapse">Read more</span></p>
+				<a href="https://github.com/maciej-mazur-github/JAVA_OnClick-Listener-Simulation" target="_blank">Onclick Listener Simulation</a>
+				<p class="project-description">Simple program simulating onclick actions. In an infinite loop it checks users choices. When the user choses "1" (simulating that some element has been clicked)<span class="dots">...</span><span class="more"> the program checks whether the onClickListener has been set or not. Inner interface OnClickListener was declared in Button class and then Button method setOnClickListener() is called with an argument being an anonymous class overriding OnClickListener interface's method onClick().</span><span class="expand-collapse">Read more</span></p>
 			</div>
 
 
