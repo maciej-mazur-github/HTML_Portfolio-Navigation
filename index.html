@@ -124,7 +124,7 @@
 		/* form */
 
 
-		#wrapper1, #wrapper2, #wrapper3, #wrapper4  {
+		#wrapper1, #wrapper2, #wrapper3, #wrapper4, #wrapper5, #wrapper6  {
 		  background: var(--color-darkblue-alpha);
 		  padding: 2.5rem 0.625rem;
 		  border-radius: 0.25rem;
@@ -518,11 +518,53 @@
 			</div>
 
 			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_OnClick-Listener-Simulation" target="_blank">Onclick Listener Simulation</a>
-				<p class="project-description">Simple program simulating onclick actions. In an infinite loop it checks users choices. When the user choses "1" (simulating that some element has been clicked)<span class="dots">...</span><span class="more"> the program checks whether the onClickListener has been set or not. Inner interface OnClickListener was declared in Button class and then Button method setOnClickListener() is called with an argument being an anonymous class overriding OnClickListener interface's method onClick().</span><span class="expand-collapse">Read more</span></p>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Theatre-Seat-Reservation-System" target="_blank">Theatre Seat Reservation System</a>
+				<p class="project-description">Pretty expanded program simulating the theatre seat reservation system. The inner class Seat is used that implements Comparable interface and overrides its compareTo() method<span class="dots">...</span><span class="more">, later used by Collections.binarySearch(). The row number and seats per row number are both set up in a constructor call. Also, the constructor creates all the seats in 'seats' ArrayList in ascending order (by seat number, which actually is a String e.g. H05, A12, E09 etc.), setting their prices as 7$, 12$ or 14$ according to their location relative to the margins (being ¼ of row count and seat per row count respectively). You can also sort all the seats by price order. In that case the interface Comparator variable is used and an anonymous class to override compare() method, then Collections.sort() method is used. You can also shuffle all the seats with a method based on Collections.shuffle() and then, if you prefer, sort them all again by name in ascending order using a method based on Selection Sort algorithm. You can show all the seats, including their number, price and reservation status. Method showSeats() uses a String 'builder' to construct a desired presentation. When reserving a seat, the validity of the number entered by the user is verified first. Lower case letters are replaced with uppercase and 1-digit seat numbers (in a row) have leading zero added. Then, if the ArrayList is sorted by seat number in ascending order, 3 types of searching the desired seat are available - Brute Force, Binary Search (based on Collections.binarySearch()) and manually implemented Binary Search. Brute Force and manually implemented Binary Search also print dots to let the user be aware of the time complexity of both algorithms. You can also cancel the reservation of any seat. The only public method run() is based on an infinite loop that can be broken only by choosing zero by the user.</span><span class="expand-collapse">Read more</span></p>
 			</div>
 
 
+		</div>
+
+
+	</div>
+
+
+	<div id="wrapper5">
+		<p class="topic-title">Java Generics</p>
+		<div class="topic-body">
+			<div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Team-Leagues-And-Rankings" target="_blank">Team Leagues And Rankings</a>
+				<p class="project-description">Pretty simple program to exercise using class inheritance and generics. Base class Player is created, then its subclasses BaseballPlayer, FootballPlayer and BasketballPlayer<span class="dots">...</span><span class="more">. Then the generic class Team is created that uses parameter T narrowed down to types/classes extending class Player, and also implementing Comparable interface. Eventually there is a generic class League created that uses 2 parameters - U extending class Player and T extending generic class Team&ltU&gt. You can then add players to the respective teams, simulate the matches between the teams and then add the teams to the leagues. Collections.reverse() was used to print the list of team rankings in descending order.</span><span class="expand-collapse">Read more</span></p>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<div id="wrapper6">
+		<p class="topic-title">Object Oriented Programming</p>
+		<div class="topic-body">
+			<div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Burger-Company" target="_blank">Burger Company</a>
+				<p class="project-description">Simple program based on inheritance and method overriding. The base class Hamburger is created with several elements like name, meat type, base price and<span class="dots">...</span><span class="more"> a bread roll type that are all set up by the constructor. You can also add up to 4 additional ingredients with their prices and then itemize (sum up) all the base hamburger, optional additions and their prices. Class HealthyBurger extends class Hamburger and hardcodes its name as "Healthy Burger" and its bread roll type as "Brown rye" and also allows the user to add up to two healthy additions. Overriden method itemize() calls base class equivalent first and then proceeds with summing up optional healthy additions. DeluxeBurger class also extends Hamburger class and its constructor hardcodes the name, meat type, price, bread roll type and one addition. All the base class addHamburgerAddition() methods are overridden in a way that does not allow a user to add any more additions.</span><span class="expand-collapse">Read more</span></p>
+			</div>
+
+			<div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Car-Polymorphism" target="_blank">Car Polymorphism</a>
+				<p class="project-description">Very simple program showing the mechanics of inheritance and polymorphism.</p>
+			</div>
+
+			<div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_Driving-Outlander" target="_blank">Driving Outlander</a>
+				<p class="project-description">Simple program showing the mechanics of inheritance. Subclasses gradually add new attributes to the final product (Vehicle -> Car -> Outlander).</p>
+			</div>
+
+
+			<div>
+				<a href="https://github.com/maciej-mazur-github/JAVA_PC-Composition" target="_blank">PC Composition</a>
+				<p class="project-description">Pretty nice program based on composition design technique. You can build a PC using pre-built components, i.e., custom built classes like Monitor, Motherboard, Case<span class="dots">...</span><span class="more"> etc. and their public methods to further show how the PC works.</span><span class="expand-collapse">Read more</span></p>
+			</div>
 		</div>
 
 
