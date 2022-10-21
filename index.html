@@ -197,6 +197,7 @@
 		  text-decoration: none;
 		  color: #00c5da;
 		  font-size: 1.1em;
+		  display: inline-block;
 		}
 
 		a:hover {
@@ -232,14 +233,52 @@
 		  text-decoration: underline;
 		}
 
-		.complex1 {
-	     	background: url("graphic.jpg");
+		.difficulty-level-1 {
+	     	background: url("Difficulty1.png");
+
+		}
+
+		.difficulty-level-2 {
+			background: url("Difficulty2.png");
+		}
+
+		div.difficulty-level-1, .difficulty-level-2 {
 			background-repeat: no-repeat;
-			width: 15px;
-			height: 15px;
-			background-size: 100%;
+			//margin-bottom: 0px;
+			//margin-right: auto;
+		    //margin-left: 50;
+			min-width: 150px;
+			min-height: 30px;
+			//background-position: bottom;
+  			background-size: 130px;
 			display: inline-block;
-			color: #FFFFFF;
+			position: relative;
+ 			right: 0;
+ 			bottom: -12px;
+			border: 1px;
+		}
+
+		div.project-title {
+			display: inline-block;
+			position: relative;
+			left: 0;
+			border: 1px;
+			width: 100%;
+		}
+
+
+		div.difficulty-label {
+		  font-style: italic;
+		  font-weight: 200;
+		  font-size: 0.9em;
+		  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+		  display: inline-block;
+		  bottom: 0;
+		  border: 1px;
+		  position: absolute;
+ 		  right: 100px;
+		  //margin-right: 0px;
+		  //margin-left: auto;
 		}
 
     </style>
@@ -262,12 +301,23 @@
 			<p class="topic-title">Arrays, Lists, Autoboxing and Unboxing Based</p>
 			<div class="topic-body">
 				<div>
-					<a href="https://github.com/maciej-mazur-github/JAVA_Banking-Simulation" target="_blank">Banking Simulation</a><div class="complex1"></div>
+					<div class="project-title">
+						<div><a href="https://github.com/maciej-mazur-github/JAVA_Banking-Simulation" target="_blank">Banking Simulation</a></div>
+						<div class="difficulty-label">Difficulty
+							<div class="difficulty-level-1"></div>
+						</div>
+					</div>
+
 					<p class="project-description">Create a bank. Add and/or remove specific branches, customers or transactions. List all customers within a specific branch or all bank customers<span class="dots">...</span><span class="more"> if you need. Safety measures were taken to avoid adding a duplicated branch, to remove a non-existent branch, to add (or remove) a customer to a non-existent branch, to duplicate a customer within the same branch, to add a transaction to a non-existent branch or non-existent customer, to remove a non-existent customer from a branch.</span><span class="expand-collapse">Read more</span></p>
 				</div>
 
 				<div>
-					<a href="https://github.com/maciej-mazur-github/JAVA_Finding-Minimum-Element-In-Array" target="_blank">Finding Minimum Element In Array<img src="graphic2.jpg" alt="Complexity level"></a>
+					<div class="project-title">
+						<a href="https://github.com/maciej-mazur-github/JAVA_Finding-Minimum-Element-In-Array" target="_blank">Finding Minimum Element In Array</a>
+						<div class="difficulty-label">Difficulty
+							<div class="difficulty-level-2"></div>
+						</div>
+					</div>
 					<p class="project-description">Simple minimum value finder working on an array built by the user. The array is built dynamically - the user provides consecutive integer values, also decides about the size of the array.</p>
 				</div>
 
