@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="icon" href="favicon.png">
+	<title>Portfolio Home Page</title>
+
 	<style>
       <!--@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap'); -->
 
 		:root {
 		  --color-white: #f3f3f3;
+		  --color-white-alpha: rgba(125, 125, 193, 0.87);
 		  --color-darkblue: #1b1b32;
 		  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
 		  --color-green: #37af65;
@@ -17,35 +21,6 @@
 		  box-sizing: border-box;
 		}
 
-		body {
-		  font-family: 'Poppins', sans-serif;
-		  font-size: 1rem;
-		  font-weight: 400;
-		  line-height: 1.4;
-		  color: var(--color-white);
-		  margin: 0;
-		}
-
-		/* mobile friendly alternative to using background-attachment: fixed */
-		body::before {
-		  content: '';
-		  position: fixed;
-		  top: 0;
-		  left: 0;
-		  height: 100%;
-		  width: 100%;
-		  z-index: -1;
-		  background: var(--color-darkblue);
-		  background-image: linear-gradient(
-			  115deg,
-			  rgba(58, 58, 158, 0.8),
-			  rgba(136, 136, 206, 0.7)
-			),
-			url(https://www.linguahouse.com/linguafiles/md5/d3848eb1bb1f166441b1a2d4a574b4f6);
-		  background-size: cover;
-		  background-repeat: no-repeat;
-		  background-position: center;
-		}
 
 		h1 {
 		  font-weight: 400;
@@ -83,28 +58,6 @@
 		  border: none;
 		}
 
-		.container {
-		  width: 100%;
-		  margin: 3.125rem auto 0 auto;
-		}
-
-		@media (min-width: 576px) {
-		  .container {
-			max-width: 540px;
-		  }
-		}
-
-		@media (min-width: 768px) {
-		  .container {
-			max-width: 720px;
-		  }
-		}
-
-		.header {
-		  padding: 0 0.625rem;
-		  margin-bottom: 10rem;
-		}
-
 		.description {
 		  font-style: italic;
 		  font-weight: 200;
@@ -115,26 +68,6 @@
 		  margin-left: 0.25rem;
 		  font-size: 0.9rem;
 		  color: #e4e4e4;
-		}
-
-		.text-center {
-		  text-align: center;
-		}
-
-		/* form */
-
-
-		#wrapper1, #wrapper2, #wrapper3, #wrapper4, #wrapper5, #wrapper6  {
-		  background: var(--color-darkblue-alpha);
-		  padding: 2.5rem 0.625rem;
-		  border-radius: 0.25rem;
-		  margin: 1rem 0 1rem 0;
-		}
-
-		@media (min-width: 480px) {
-		  form {
-			padding: 2.5rem;
-		  }
 		}
 
 
@@ -174,24 +107,6 @@
 		}
 
 
-
-		.topic-body {
-		  background: hsla(240, 30%, 58%, 0.56);
-		  padding: 1rem 0.625rem;
-		  border-radius: 0.25rem;
-		  margin: 0.5rem 1rem 1rem 1rem;
-		}
-
-		.paragraph-title {
-			text-align: center;
-			font-size: 1.5em;
-		}
-
-		.topic-title {
-		  text-align: center;
-		  margin-bottom: 0.9em;
-		  font-size: 1.5em;
-		}
 
 		a {
 		  text-decoration: none;
@@ -244,9 +159,6 @@
 
 		div.difficulty-level-1, .difficulty-level-2 {
 			background-repeat: no-repeat;
-			//margin-bottom: 0px;
-			//margin-right: auto;
-		    //margin-left: 50;
 			min-width: 150px;
 			min-height: 30px;
 			//background-position: bottom;
@@ -281,6 +193,141 @@
 		  //margin-left: auto;
 		}
 
+
+
+		@media (min-width: 576px) {
+		  .container {
+			max-width: 540px;
+		  }
+		}
+
+
+		@media (min-width: 768px) {
+		  .container {
+			max-width: 720px;
+		  }
+		}
+
+		@media (min-width: 480px) {
+		  form {
+			padding: 2.5rem;
+		  }
+		}
+
+
+		.text-center {
+		  text-align: center;
+		}
+
+
+		.container {
+			position: absolute;
+			left: 50%;
+			top: 10%;
+			transform: translate(-50%, -10%);
+			width: 100%;
+			//margin: 3.125rem auto 0 auto;
+		}
+
+		.header {
+		  position: absolute;
+		  min-width: 800px;
+		  left: 50%;
+		  top: 50%;
+		  transform: translate(-50%, -30%);
+		}
+
+		.language-choice {
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  transform: translate(-50%, 70%);
+		  width: 100%;
+		}
+
+
+
+		.wrapper {
+		  background: var(--color-darkblue-alpha);
+		  padding: 0.5rem 0.1rem;
+		  border-radius: 0.25rem;
+		  margin: 1rem 1rem 1rem 1rem;
+		  display: inline-block;
+		}
+
+		.wrapper a {
+			text-decoration: none;
+		}
+
+		.topic-body:hover {
+			background: var(--color-white-alpha);
+		}
+
+		.topic-body {
+		  background: hsla(240, 30%, 58%, 0.56);
+		  padding: 2rem 0.2rem;
+		  border-radius: 0.25rem;
+		  margin: 0.5rem 1rem 1rem 1rem;
+		}
+
+		.expand-collapse {
+		  display: inline;
+		  text-decoration: none;
+		  color: #00c5da;
+		  font-size: 1em;
+		  background-color: transparent;
+		  align: left;
+		  padding: 0 0 0 5px;
+		  margin: 0;
+		  cursor: pointer;
+		}
+
+		.expand-collapse:hover {
+		  text-decoration: underline;
+		}
+
+
+
+
+		.topic-title {
+			text-align: center;
+			font-size: 1.5em;
+			color: #00c5da;
+		}
+
+
+
+		body {
+		  font-family: 'Poppins', sans-serif;
+		  font-size: 1rem;
+		  font-weight: 400;
+		  line-height: 1.4;
+		  color: var(--color-white);
+		  margin: 0;
+		  min-height: 100vh;
+		}
+
+		/* mobile friendly alternative to using background-attachment: fixed */
+		body::before {
+		  content: '';
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  height: 100%;
+		  width: 100%;
+		  z-index: -1;
+		  background: var(--color-darkblue);
+		  background-image: linear-gradient(
+			  115deg,
+			  rgba(58, 58, 158, 0.8),
+			  rgba(136, 136, 206, 0.7)
+			),
+			url(https://www.linguahouse.com/linguafiles/md5/d3848eb1bb1f166441b1a2d4a574b4f6);
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  background-position: center;
+		}
+
     </style>
 </head>
 <body>
@@ -294,365 +341,34 @@
 	</header>
 
 
-	<div>
-		<p class="paragraph-title">Java Projects <br>with commit history</p>
+	<div class="language-choice">
+		<div class="wrapper">
 
-		<div id="wrapper1">
-			<p class="topic-title">Arrays, Lists, Autoboxing and Unboxing Based</p>
-			<div class="topic-body">
-				<div>
-					<div class="project-title">
-						<div><a href="https://github.com/maciej-mazur-github/JAVA_Banking-Simulation" target="_blank">Banking Simulation</a></div>
-						<div class="difficulty-label">Difficulty
-							<div class="difficulty-level-1"></div>
-						</div>
+			<a href="index_java.html" alt="Java Projects" title="Go to Java Projects section">
+				<div class="topic-body">
+					<div>
+						<p class="topic-title">Java Projects <br>with commit history</p>
 					</div>
-
-					<p class="project-description">Create a bank. Add and/or remove specific branches, customers or transactions. List all customers within a specific branch or all bank customers<span class="dots">...</span><span class="more"> if you need. Safety measures were taken to avoid adding a duplicated branch, to remove a non-existent branch, to add (or remove) a customer to a non-existent branch, to duplicate a customer within the same branch, to add a transaction to a non-existent branch or non-existent customer, to remove a non-existent customer from a branch.</span><span class="expand-collapse">Read more</span></p>
 				</div>
+			</a>
 
-				<div>
-					<div class="project-title">
-						<a href="https://github.com/maciej-mazur-github/JAVA_Finding-Minimum-Element-In-Array" target="_blank">Finding Minimum Element In Array</a>
-						<div class="difficulty-label">Difficulty
-							<div class="difficulty-level-2"></div>
-						</div>
+		</div>
+
+
+
+		<div class="wrapper">
+
+			<a href="index_cpp.html" alt="C++ Projects" title="Go to C++ Projects section">
+				<div class="topic-body">
+					<div>
+						<p class="topic-title">C++ Projects <br>with no commit history</p>
 					</div>
-					<p class="project-description">Simple minimum value finder working on an array built by the user. The array is built dynamically - the user provides consecutive integer values, also decides about the size of the array.</p>
 				</div>
-
-				<div>
-					<a href="https://github.com/maciej-mazur-github/JAVA_Grocery-List-Operations" target="_blank">Grocery List Operations</a>
-					<p class="project-description">Grocery shopping list operations simulator. Add, remove or modify any item in the list. Also search for a specific item, if you need, to see if it is present. GroceryList class<span class="dots">...</span><span class="more"> created based on ArrayList of Strings. Item removal attainable by item name or by its position number in the list. The code is guarded from attempts to remove non-existent items. All these apply to modifying items in the list too.</span><span class="expand-collapse">Read more</span></p>
-				</div>
-
-				<div>
-					<a href="https://github.com/maciej-mazur-github/JAVA_Mobile-Phone-Contact-List-Operations" target="_blank">Mobile Phone Contact List Operations</a>
-					<p class="project-description">Simulate operations on mobile phone contact list. Add a new contact providing the name and the phone number. The code protects user from adding a contact<span class="dots">...</span><span class="more"> with the same number as owner's one. Update or remove the existing contact if you need, being restricted from attempting to operate on a non-existent one. You can search for a contact to check whether you have already got it saved or not. Print all the contact list on demand. Inner class Contact created to make code more compact. Function runMobilePhone() based on an infinite loop which you can quit only by pressing '6' as a chosen action. Method overloading was used extensively. The Main function was kept as concise as possible.</span><span class="expand-collapse">Read more</span></p>
-				</div>
-
-				<div>
-					<a href="https://github.com/maciej-mazur-github/JAVA_Playlist-Simulation" target="_blank">Playlist Simulation</a>
-					<p class="project-description">Simulate operations on a music playlist. 2 initial default albums are "built-in" the album storage during class Player constructor processing to make it easier for a user<span class="dots">...</span><span class="more"> to simulate traversing the playlist without having to add/create some new songs first. Class Player based on 2 LinkedLists for playlist and for albums storage. ListIterator was used to move through the playlist. User is asked to provide action choices in an infinite loop. Various actions (20) are available, related to adding songs/albums (e.g. creating albums, adding specific songs or whole albums to the playlist), "playing" the playlist (all the playlist from the beginning or a specific song chosen by a track number, playing the last played song, the next and/or previous song), printing songs in playlist, songs in a specific album or in all albums (several types of print available), searching for specific songs in playlist and/or in stored albums. You can also search for a specific song in all the album store in case you suspect a given song might have re-occurred in 1 or more albums. Inner class PairNumberSong was created to identify the number of the album and the position number in a given album when searching for one song in more than one album. You can delete a song from playlist by its title or by its track number. The code is guarded from repeating playing the same song when changing the direction of traversal through the playlist, also from the attempt to move outside of the range of the playlist when any of its ends is reached or from entering a non-numeric value as a track choice; also from duplicating albums in  the album store. Separate method songNumberChoice() was used to properly process user's choice of the song number. Constituent package private classes Song and Album were used to build a main class Player. JAR archive was created. Object class toString() was overriden.</span><span class="expand-collapse">Read more</span></p>
-				</div>
-
-				<div>
-					<a href="https://github.com/maciej-mazur-github/JAVA_Reversing-Array" target="_blank">Reversing Array</a>
-					<p class="project-description">Simple program letting the user dynamically build an array of integers, then reverse it and finally print the result.</p>
-				</div>
-
-				<div>
-					<a href="https://github.com/maciej-mazur-github/JAVA_Sorting-Array" target="_blank">Sorting Array</a>
-					<p class="project-description">Simple sorter of integer arrays. Build an array dynamically until the number of elements reaches the preset capacity or until you enter any non-numeric value. The object<span class="dots">...</span><span class="more"> of class ArraySorter will then automatically sort (Bubble Sort mechanism based) the entered array and will comprise both the initial and the sorted array. The size of the sorted array will be optimized in terms of size to reflect the actual number of elements (not necessarily the preset capacity). You can then print whichever array you want unless they are empty.</span><span class="expand-collapse">Read more</span></p>
-				</div>
-
-				<div>
-					<a href="https://github.com/maciej-mazur-github/JAVA_Travel-Simulation" target="_blank">Travel Simulation</a>
-					<p class="project-description">Simulation of planning and going travelling. Class Travel based on LinkedList of cities and an iterator helping to traverse the list. You can add cities to the list<span class="dots">...</span><span class="more"> in alphabetical order. You can remove any city from the list. You can print the available actions and the current status of the list any time you need. You can traverse through the list forward and backwards. Travel object always "remembers" your actual position on the list. Whenever you change direction of your travel the code protects you from visiting the last visited city again (instead the actual previously visited city will be displayed in the message). Also, whenever you reach any of the list's ends you will be informed that no further travel in the same direction is possible. Instead, you will be suggested by the program to change the direction of your travel.</span><span class="expand-collapse">Read more</span></p>
-				</div>
-			</div>
-
+			</a>
 
 		</div>
 	</div>
-
-
-	<div id="wrapper2">
-		<p class="topic-title">Control Flow Statements, Algorithmic Exercises</p>
-		<div class="topic-body">
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Merge-Sort-Implementation" target="_blank">Merge Sort Implementation</a>
-				<p class="project-description">Program implementing the interesting and pretty sophisticated Merge Sort algorithm based on the recursion. The array of integer numbers can be sorted in ascending<span class="dots">...</span><span class="more"> order, starting with dividing the input array into 2 halves, which are then proceeded further and merged (actually sorted) accordingly using a recursive mechanism. There are 2 overloaded versions of sort() method used - one of them public, another one private (called by the public one) to let the user avoid the necessity to enter the start and the end index of the array beside the reference to the actual array. i.e. instead of calling sort(arr[], 0, 10) it is sufficient to call sort(arr[]) .</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_All-Factors" target="_blank">All Factors</a>
-				<p class="project-description">Very simple factor printer for non-negative integer numbers.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Diagonal-Star" target="_blank">Diagonal Star</a>
-				<p class="project-description">ASCII graphics diagonal star (actually crossed square) printer for squares of size no less than 5.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Digit-Sum-Calculator" target="_blank">Digit Sum Calculator</a>
-				<p class="project-description">Simple program summing all the digits of the entered integer number no less than 10.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Even-Digit-Sum" target="_blank">Even Digit Sum</a>
-				<p class="project-description">Simple program similar to "Digit Sum Calculator" but summing even digits only of the entered integer number no less than 0.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_First_And_Last_Digit_Sum" target="_blank">First And Last Digit Sum</a>
-				<p class="project-description">Simple program summing the least and the most significant digit of the entered non-negative integer number.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Flour-Pack-Problem" target="_blank">Flour Pack Problem</a>
-				<p class="project-description">Pretty creative and optimized approach to resolving the Flour Pack Problem quoted below<span class="dots">...</span><span class="more">:<br><br>
-				"Write a method named canPack with three parameters of type int named bigCount, smallCount, and goal.<br>
-				The parameter bigCount represents the count of big flour bags (5 kilos each). The parameter smallCount represents the count of small flour bags (1 kilo each). The parameter goal represents the goal amount of kilos of flour needed to assemble a package. Therefore, the sum of the kilos of bigCount and smallCount must be at least equal to the value of goal. The method should return true if it is possible to make a package with goal kilos of flour. If the sum is greater than goal, ensure that only full bags are used towards the goal amount. <br><br>
-				For example, if goal = 9, bigCount = 2, and smallCount = 0, the method should return false since each big bag is 5 kilos and cannot be divided. However, if goal = 9, bigCount = 1, and smallCount = 5, the method should return true because of 1 full bigCount bag and 4 full smallCount bags equal goal, and it's okay if there are additional bags left over.<br><br>
-
-				If any of the parameters are negative, return false."</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Greatest-Common-Divisor" target="_blank">Greatest Common Divisor</a>
-				<p class="project-description">Greatest Common Divisor finder. Algorithm based mainly on checking the rest of the division.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Input-Calculator" target="_blank">Input Calculator</a>
-				<p class="project-description">Simple program summing and averaging integer numbers entered by the user. Numbers are entered as long as any non-integer character is provided.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Largest-Prime" target="_blank">Largest Prime</a>
-				<p class="project-description">Simple calculator using mathematical optimizations to find the largest prime factor of any integer number entered that is not less than 2.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Last-Digit-Checker" target="_blank">Last Digit Checker</a>
-				<p class="project-description">Simple program checking whether the 3 entered integer numbers have all the exact same last digit and whether they all belong to the range <10; 1000></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Minimum-And-Maximum-User-Input-Finder" target="_blank">Minimum And Maximum User Input Finder</a>
-				<p class="project-description">Simple program returning the minimum and maximum number entered by the user. The user enters any integer numbers as long as any non-integer value<span class="dots">...</span><span class="more"> is provided. When it happens, the infinite loop breaks and the program returns a message informing of the minimum and maximum values earlier entered.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Number-Of-Days-In-Month" target="_blank">Number of days in month</a>
-				<p class="project-description">Simple program returning the amount of days in a given month of a given year. The code takes care of February, taking into account whether the given year is a leap one or not.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Number-Palindrome" target="_blank">Number palindrome</a>
-				<p class="project-description">Simple program that can reverse the order of integer number digits and also can check whether the entered number is a palindrome (reversed number is equal to the initial one) or not.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Number-To-Words" target="_blank">Number To Words</a>
-				<p class="project-description">Simple program that can count the amount of digits in a non-negative integer number, convert its digits to their string equivalents/names and can also reverse the number (e.g. 1325 -> 5231).</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Paint-Job-Problem" target="_blank">Paint Job Problem</a>
-				<p class="project-description">Resolution to an interesting algorithmic problem described extensively as follows:<br>
-
-					"Bob is a wall painter<span class="dots">...</span><span class="more"> and he needs your help. You have to write a program that helps Bob calculate how many buckets of paint he needs to buy before going to work. Bob might also have some extra buckets at home. He also knows the area that he can cover with one bucket of paint.<br><br>
-
-				1. Write a method named getBucketCount with 4 parameters. The first parameter should be named width of type double. This parameter represents the width of the wall.
-				The second parameter should be named height of type double. This parameter represents the height of the wall.
-				The third parameter should be named areaPerBucket. This parameter represents the area that can be covered with one bucket of paint.
-				The fourth parameter should be named extraBuckets. This parameter represents the bucket count that Bob has at home.
-				The method needs to return a value of type int that represents the number of buckets that Bob needs to buy before going to work. To calculate the bucket count, refer to the notes below.
-				If one of the parameters width, height or areaPerBucket is less or equal to 0 or if extraBuckets is less than 0, the method needs to return -1 to indicate an invalid value.
-				If all parameters are valid, the method needs to calculate the number of buckets and return it.<br><br>
-
-				Examples of input/output: <br>
-					getBucketCount(-3.4, 2.1, 1.5, 2); → should return -1 since the width parameter is invalid<br>
-					getBucketCount(3.4, 2.1, 1.5, 2); → should return 3 since the wall area is 7.14, a single bucket can cover an area of 1.5 and Bob has 2 extra buckets home.<br>
-					getBucketCount(2.75, 3.25, 2.5, 1); → should return 3 since the wall area is 8.9375, a single bucket can cover an area of 2.5 and Bob has 1 extra bucket at home.<br><br>
-
-				2. Bob does not like to enter 0 for the extraBuckets parameter so he needs another method.
-				Write another overloaded method named getBucketCount with 3 parameters namely width, height, and areaPerBucket (all of type double).
-				This method needs to return a value of type int that represents the number of buckets that Bob needs to buy before going to work. To calculate the bucket count, refer to the notes below.
-				If one of the parameters width, height or areaPerBucket is less or equal to 0, the method needs to return -1 to indicate an invalid value.
-				If all parameters are valid, the method needs to calculate the number of buckets and return it.<br><br>
-
-				Examples of input/output: <br>
-					getBucketCount(-3.4, 2.1, 1.5); → should return -1 since the width parameter is invalid<br>
-					getBucketCount(3.4, 2.1, 1.5); → should return 5 since the wall area is 7.14, and a single bucket can cover an area of 1.5.<br>
-					getBucketCount(7.25, 4.3, 2.35); → should return 14 since the wall area is 31.175, and a single bucket can cover an area of 2.35.<br><br>
-
-				3. In some cases, Bob does not know the width and height of the wall but he knows the area of a wall. He needs you to write another method.
-				Write another overloaded method named getBucketCount with 2 parameters namely, area and areaPerBucket (both of type double).
-				The method needs to return a value of type int that represents the number of buckets that Bob needs to buy before going to work. To calculate the bucket count, refer to the notes below.
-				If one of the parameters area or areaPerBucket is less or equal to 0, the method needs to return -1to indicate an invalid value.
-				If all parameters are valid, the method needs to calculate the number of buckets and return it.<br><br>
-
-				Examples of input/output: <br>
-					getBucketCount(3.4, 1.5); → should return 3 since the area is 3.4 and a single bucket can cover an area of 1.5<br>
-					getBucketCount(6.26, 2.2); → should return 3 since the wall area is 6.26 and a single bucket can cover an area of 2.2.<br>
-					getBucketCount(3.26, 0.75); → should return 5 since the wall area is 3.26, and a single bucket can cover an area of 0.75 .<br><br>
-
-				Do your best to help Bob"
-				</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Perfect-Number" target="_blank">Perfect Number</a>
-				<p class="project-description">Simple program checking whether the entered integer number no less than 1 is a perfect number (meaning that this number is equal to the sum of all its divisors).</p>
-			</div>
-
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Shared-Digit" target="_blank">Shared digit</a>
-				<p class="project-description">Simple program checking whether two 2-digit integer numbers comprise at least one common digit (not necessarily at the same position). Nested "while" loops<span class="dots">...</span><span class="more"> have been used to compare each digit of the first argument with each digit of the second one, however as soon as a match is found, the program ends, so the algorithm works optimally and avoids reduntant checks.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Sum-Odd" target="_blank">Sum Odd</a>
-				<p class="project-description">Simple program returning the sum of all odd positive numbers belonging to the specified range (double inclusive).</p>
-			</div>
-
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Even-Numbers-Printer" target="_blank">Even Numbers Printer</a>
-				<p class="project-description">Simple program printing at most 5 prime numbers in a given range, based on rests of the division.</p>
-			</div>
-
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Seconds-And-Minutes" target="_blank">Seconds And Minutes</a>
-				<p class="project-description">Pretty nice program converting the entered amount of minutes and seconds (in a form of numbers) to string representing the amount of hours, minutes and<span class="dots">...</span><span class="more"> seconds accordingly. Whenever it turns out that any of those amounts is a 1-digit number, the program adds a leading “0” to that, e.g., “5” will be turned to “05”. There is also an overloaded version of the converting function, operating on the entered amount seconds only (no minutes), leading to the exact same results.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-
-		</div>
-
-
-	</div>
-
-
-	<div id="wrapper3">
-		<p class="topic-title">Inner and Abstract Classes & Interfaces</p>
-		<div class="topic-body">
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Binary-Search-Tree-Implementation" target="_blank">Binary Search Tree Implementation</a>
-				<p class="project-description">Pretty sophisticated implementation of Binary Search Tree (BST). Abstract class Item and interface List have been used. You can add items using either a recursive or<span class="dots">...</span><span class="more"> non-recursive method. In both cases you are restricted from adding an existing item. The removal of the item is only available in a recursive form. All scenarios of removal are covered - when a found and to-be-removed item has no subtree whatsoever, when it has only the left subtree, when it only has a right subtree and finally when it has both left and right subtrees. In the latter scenario finding the smallest value item in the right subtree has been used to re-build the current structure of the tree. The code is guarded from the attempt to remove a non-existent item. You can also check whether a given item already exists in the BST or not, using recursive method. Variables foundSearchedItem and lastFoundItem have been used to let all the methods use them any time. Traversing the list is available in 3 ways:<br><br>
-
-					1. Recursively.<br>
-					2. Using Stack and no recursion.<br>
-					3. Using no Stack and no recursion.
-				</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Gearbox-Simulation" target="_blank">Gearbox Simulation</a>
-				<p class="project-description">Pretty simple program simulating operating on a car gearbox. There is an ArrayList of gears used and an inner class Gear. Each gear in ArrayList has its number and<span class="dots">...</span><span class="more"> ratio used to calculate a drive speed when needed. Private addGear method is used by the constructor to build as many gears in the gearbox as the user decides when calling the constructor. Using wheelSpeed method you can always check the current speed at which the car drives unless the clutch is in. You can also change gear as long as the chosen gear number is available and as long as the clutch is in. You can operate on clutch using operateClutch method. </span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_LinkedList-Implementation" target="_blank">LinkedList Implementation</a>
-				<p class="project-description">Pretty sophisticated implementation of the LinkedList. The same abstract class Item and the same interface List have been used as in the implementation of<span class="dots">...</span><span class="more"> Binary Search Tree. Method chaining and items values comparison have been used extensively. Removal of any item is based on finding the item in the Linked List first. When traversing the list, comas are only added after all items except after the last one. Further actions depend on the result of containsItem method. The method containsItem exists in 2 overloaded versions. All methods are non-recursive.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_OnClick-Listener-Simulation" target="_blank">Onclick Listener Simulation</a>
-				<p class="project-description">Simple program simulating onclick actions. In an infinite loop it checks users choices. When the user choses "1" (simulating that some element has been clicked)<span class="dots">...</span><span class="more"> the program checks whether the onClickListener has been set or not. Inner interface OnClickListener was declared in Button class and then Button method setOnClickListener() is called with an argument being an anonymous class overriding OnClickListener interface's method onClick().</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Simple-Game-With-Interfaces" target="_blank">Simple Game With Interfaces</a>
-				<p class="project-description">Simple game simulator being actually an exercise in using interfaces.</p>
-			</div>
-
-
-		</div>
-
-
-	</div>
-
-
-	<div id="wrapper4">
-		<p class="topic-title">Java Collections</p>
-		<div class="topic-body">
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Adventure-Game" target="_blank">Adventure Game</a>
-				<p class="project-description">Simulation of a "maze runner" style game. HashMaps have been used in a pretty creative way. There is an immutable class Location of which each object contains its own<span class="dots">...</span><span class="more"> HashMap with exits, mapping direction string IDs (S, N, W, E and Q) with their corresponding locationID numbers, e.g., if you are currently in the location #1 and if you choose to go North, then you will reach the location #5 (please see the attached .png file in the repository). There is also another class used, AdventureGame, that contains 2 other HashMaps – ‘locations’ and ‘directionsVocabulary’. HashMap "locations" contains a mapping between each location's integer ID and the corresponding object of class Location (the latter one basically binding information on given location's possible exit IDs and to which locations these exits lead). HashMap ‘directionsVocabulary’ plays a role of mapping keywords representing directions of the world (SOUTH, NORTH etc.) with their 1-character IDs (S, N etc.). The usage of toUpperCase() and splitting user's string input (when asked in which direction they want to go) allows the program to properly process not only short, case-sensitive answers like S, N, but also the answers like "I now need to go south" (as this answer contains the keyword "south"). Both HashMaps 'locations' and 'directionsVocabulary' are fully initialized by AdventureGame's constructor. Each location in 'locations' HashMap contains Q->0 mapping which allows the user to break program's main infinite loop and hence to end the program whenever 'Q' or the keyword 'quit' is entered.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Solar-System" target="_blank">Solar System</a>
-				<p class="project-description">Pretty simple program showing the mechanics of HashMap and HashSet, based on Solar Systems heavenly bodies (planets and their moons). The class HeavenlyBody has<span class="dots">...</span><span class="more"> Object methods hashCode() and equals(Object) overridden so that the HashMap representing the whole Solar System and the HashSet representing the set of planets can work properly. The program shows that there can be no value duplicates in HashSets and also that there can be no key duplicates in HashMap but value duplicates are allowed at the same time. E.g. there is an entry added to the solarSystem HashMap several times with the key "Jupiter" but each time with different value (HeavenlyBody class object) which eventually results in only one entry existing in this HashMap of key "Jupiter" and of the last added HeavenlyBody value.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Theatre-Seat-Reservation-System" target="_blank">Theatre Seat Reservation System</a>
-				<p class="project-description">Pretty expanded program simulating the theatre seat reservation system. The inner class Seat is used that implements Comparable interface and overrides its compareTo() method<span class="dots">...</span><span class="more">, later used by Collections.binarySearch(). The row number and seats per row number are both set up in a constructor call. Also, the constructor creates all the seats in 'seats' ArrayList in ascending order (by seat number, which actually is a String e.g. H05, A12, E09 etc.), setting their prices as 7$, 12$ or 14$ according to their location relative to the margins (being ¼ of row count and seat per row count respectively). You can also sort all the seats by price order. In that case the interface Comparator variable is used and an anonymous class to override compare() method, then Collections.sort() method is used. You can also shuffle all the seats with a method based on Collections.shuffle() and then, if you prefer, sort them all again by name in ascending order using a method based on Selection Sort algorithm. You can show all the seats, including their number, price and reservation status. Method showSeats() uses a String 'builder' to construct a desired presentation. When reserving a seat, the validity of the number entered by the user is verified first. Lower case letters are replaced with uppercase and 1-digit seat numbers (in a row) have leading zero added. Then, if the ArrayList is sorted by seat number in ascending order, 3 types of searching the desired seat are available - Brute Force, Binary Search (based on Collections.binarySearch()) and manually implemented Binary Search. Brute Force and manually implemented Binary Search also print dots to let the user be aware of the time complexity of both algorithms. You can also cancel the reservation of any seat. The only public method run() is based on an infinite loop that can be broken only by choosing zero by the user.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-
-		</div>
-
-
-	</div>
-
-
-	<div id="wrapper5">
-		<p class="topic-title">Java Generics</p>
-		<div class="topic-body">
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Team-Leagues-And-Rankings" target="_blank">Team Leagues And Rankings</a>
-				<p class="project-description">Pretty simple program to exercise using class inheritance and generics. Base class Player is created, then its subclasses BaseballPlayer, FootballPlayer and BasketballPlayer<span class="dots">...</span><span class="more">. Then the generic class Team is created that uses parameter T narrowed down to types/classes extending class Player, and also implementing Comparable interface. Eventually there is a generic class League created that uses 2 parameters - U extending class Player and T extending generic class Team&ltU&gt. You can then add players to the respective teams, simulate the matches between the teams and then add the teams to the leagues. Collections.reverse() was used to print the list of team rankings in descending order.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-		</div>
-
-
-	</div>
-
-
-	<div id="wrapper6">
-		<p class="topic-title">Object Oriented Programming</p>
-		<div class="topic-body">
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Burger-Company" target="_blank">Burger Company</a>
-				<p class="project-description">Simple program based on inheritance and method overriding. The base class Hamburger is created with several elements like name, meat type, base price and<span class="dots">...</span><span class="more"> a bread roll type that are all set up by the constructor. You can also add up to 4 additional ingredients with their prices and then itemize (sum up) all the base hamburger, optional additions and their prices. Class HealthyBurger extends class Hamburger and hardcodes its name as "Healthy Burger" and its bread roll type as "Brown rye" and also allows the user to add up to two healthy additions. Overriden method itemize() calls base class equivalent first and then proceeds with summing up optional healthy additions. DeluxeBurger class also extends Hamburger class and its constructor hardcodes the name, meat type, price, bread roll type and one addition. All the base class addHamburgerAddition() methods are overridden in a way that does not allow a user to add any more additions.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Car-Polymorphism" target="_blank">Car Polymorphism</a>
-				<p class="project-description">Very simple program showing the mechanics of inheritance and polymorphism.</p>
-			</div>
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_Driving-Outlander" target="_blank">Driving Outlander</a>
-				<p class="project-description">Simple program showing the mechanics of inheritance. Subclasses gradually add new attributes to the final product (Vehicle -> Car -> Outlander).</p>
-			</div>
-
-
-			<div>
-				<a href="https://github.com/maciej-mazur-github/JAVA_PC-Composition" target="_blank">PC Composition</a>
-				<p class="project-description">Pretty nice program based on composition design technique. You can build a PC using pre-built components, i.e., custom built classes like Monitor, Motherboard, Case<span class="dots">...</span><span class="more"> etc. and their public methods to further show how the PC works.</span><span class="expand-collapse">Read more</span></p>
-			</div>
-		</div>
-
-
-	</div>
-
 </div>
 
-<script>
-			document.getElementById('clickActions').addEventListener('click', e => {
-			  const expand = 'Read more'
-			  const collapse = 'Read less'
-
-			  if (!e.target.classList.contains('expand-collapse')) return
-
-			  const parent = e.target.parentNode
-			  const dots = parent.getElementsByClassName('dots')[0]
-			  const more = parent.getElementsByClassName('more')[0]
-
-			  if (e.target.textContent === expand) {
-				e.target.textContent = collapse
-				dots.style.display = 'none'
-				more.style.display = 'inline'
-			  }
-			  else {
-				e.target.textContent = expand
-				dots.style.display = 'inline'
-				more.style.display = 'none'
-			  }
-			})
-	</script>
 </body>
 </html>
