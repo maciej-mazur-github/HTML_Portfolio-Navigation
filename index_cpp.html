@@ -447,17 +447,6 @@
                 <p class="project-description">Pretty creative and complex way of implementing C++ Queue based on templates. The underlying container is Doubly Linked List, also based on templates. Protected inner<span class="dots">...</span><span class="more"> struct Node was used operate on List elements. Struct Node uses pointers to the actual List object, to the previous Node and to the next one. To help operate on List elements the List class makes use of the pointer to the first List Node, to the last one, to the chosen one (kind of an iterator) and of the element counter. If the user tries to move the chosenNodePtr to the position outside currently available element number, then chosenNodePtr will be set to NULL to indicate that fact. You can add or remove any element, using algorithm working differently depending on how many elements the List contains and whether the element is the first one, last or middle one. Output stream operator &lt&lt has been overloaded to let the user print the whole list using a simple syntax. The Queue&ltT&gt inherits the List class privately in order to hide all List&ltT&gt mechanisms from the Client, still allowing Queue&ltT&gt to use them internally. Methods pop() and push(T) have been implemented according to the FIFO rule of the Queue. Output stream operator &lt&lt has also been overloaded to make printing the Queue easy. To facilitate pushing arrays of T objects to the Queue&ltT&gt, the method loadArrayOfObjects(T[], int) has been implemented. Also, the Queue&ltT&gt template has been specialized to operate properly when T is String.</span><span class="expand-collapse">Read more</span></p>
             </div>
 
-            <div>
-                <div class="project-title">
-                    <div><a href="https://github.com/maciej-mazur-github/CPP_Doubly-Linked-List-Implementation-With-No-Iterators" target="_blank">Doubly Linked List Implementation<br> With No Iterators</a></div>
-                    <div class="difficulty-label">Difficulty
-                        <div class="difficulty-level-4"></div>
-                    </div>
-                </div>
-
-                <p class="project-description">Successful attempt to implement template based Doubly Linked List. Each content object is pointed at by protected inner struct Node element. The list, being doubly<span class="dots">...</span><span class="more"> linked one, has Nodes containing pointers to both previous and next node. Numerous methods are available using chosenNodePtr pointer as some kind of iterator. You can then add or remove object of T type at any position in the List. There are several scenarios considered depending on where the given object is about to be added or removed (beginning, end or the middle of the List) and on how many objects there are in the List before the action (whether it is an empty list or has one, two or more elements). The destructor has also been implemented making sure that all the memory earlier allocated by the List is freed. You can print any element pointed at by chosenNodePtr pointer thanks to printChosenElement() or print the whole List content thanks to the overloaded output stream operator << .</span><span class="expand-collapse">Read more</span></p>
-            </div>
-
 
             <div>
                 <div class="project-title">
@@ -480,6 +469,32 @@
                 </div>
 
                 <p class="project-description">Kind of upgrade of Doubly Linked List Implementation With Iterators project, this time with Insert Iterator. The basic Doubly Linked List (DLL) iterator used operator= as<span class="dots">...</span><span class="more"> a way of overwriting the element at which the iterator pointed. It was not however able to add a new element to the list following DLL rules. InsertIterator&ltT&gt was implemented as a class publicly derived from IteratorDll&ltT&gt. Therefore all the functionality of InsertIterator&ltT&gt is maintained. The most important method overriden by InsertIterator&ltT&gt is operator=(T). It calls addElement(T, IteratorDll&ltT&gt) method from DLL field underlying in the inherited IteratorDll&ltT&gt. As for operator*() it was decided to return 'this' instance of InsertIterator&ltT&gt, not the actual object pointed at, hence this way it is more useful in cases like '(*iit) = 456;'. As for post-increment operator++(int) it works the same way as the pre-increment one due to decision that after inserting a new element to the list the InsertIterator&ltT&gt should remain pointing at the original element, not at the newly added one. Keep in mind that if you need to operate on DLL using iterators acting like typical pointers, you still have IteratorDll&ltT&gt available.</span><span class="expand-collapse">Read more</span></p>
+            </div>
+
+
+
+            <div>
+                <div class="project-title">
+                    <div><a href="https://github.com/maciej-mazur-github/CPP_Doubly-Linked-List-Implementation-With-No-Iterators" target="_blank">Doubly Linked List Implementation<br> With No Iterators</a></div>
+                    <div class="difficulty-label">Difficulty
+                        <div class="difficulty-level-4"></div>
+                    </div>
+                </div>
+
+                <p class="project-description">Successful attempt to implement template based Doubly Linked List. Each content object is pointed at by protected inner struct Node element. The list, being doubly<span class="dots">...</span><span class="more"> linked one, has Nodes containing pointers to both previous and next node. Numerous methods are available using chosenNodePtr pointer as some kind of iterator. You can then add or remove object of T type at any position in the List. There are several scenarios considered depending on where the given object is about to be added or removed (beginning, end or the middle of the List) and on how many objects there are in the List before the action (whether it is an empty list or has one, two or more elements). The destructor has also been implemented making sure that all the memory earlier allocated by the List is freed. You can print any element pointed at by chosenNodePtr pointer thanks to printChosenElement() or print the whole List content thanks to the overloaded output stream operator << .</span><span class="expand-collapse">Read more</span></p>
+            </div>
+
+
+
+            <div>
+                <div class="project-title">
+                    <div><a href="https://github.com/maciej-mazur-github/CPP_Game-Of-Minotaur-Using-Templates" target="_blank">Game Of Minotaur</a></div>
+                    <div class="difficulty-label">Difficulty
+                        <div class="difficulty-level-4"></div>
+                    </div>
+                </div>
+
+                <p class="project-description">Simple game based on templates. TreasureChest is a container class for class Treasure objects. The latter has operator<< overloaded to simplify printing the content.<span class="dots">...</span><span class="more"> The underlying container structure for TreasureChest is an array of pointers to Treasure<T> objects. Its size is predefined in treasure.h as a constant value. There are several public operational methods available for the user and some private accessory methods used for underlying mechanisms. Some of the methods are overloaded. Efforts were made to separate respective mechanisms into different methods. Also, some verification mechanisms were implemented, i.e. hasItem for checking whether a given treasure already exists in the TreasureChest or not, verifyAnswer to map user's answer to proper further actions. As per design one cannot duplicate any treasure in one TreasureChest. When the TreasureChest becomes full, the user is asked whether they would like to replace any of pre-existing treasures with the newly encountered one. The user then also needs to provide the correct name of the chosen to-be-replaced item. If the name does not match any of the pre-existing items, replacement will not take place. You can also remove any treasure from the chest any time you need - by name or by index.</span><span class="expand-collapse">Read more</span></p>
             </div>
 
 
