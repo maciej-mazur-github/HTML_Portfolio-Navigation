@@ -408,7 +408,7 @@
     </div>
 
 
-    <div id="wrapper4">
+    <div id="wrapper1">
         <p class="topic-title">C++ Templates Based Projects</p>
         <div class="topic-body">
             <div>
@@ -494,8 +494,34 @@
                     </div>
                 </div>
 
-                <p class="project-description">Simple game based on templates. TreasureChest is a container class for class Treasure objects. The latter has operator<< overloaded to simplify printing the content.<span class="dots">...</span><span class="more"> The underlying container structure for TreasureChest is an array of pointers to Treasure<T> objects. Its size is predefined in treasure.h as a constant value. There are several public operational methods available for the user and some private accessory methods used for underlying mechanisms. Some of the methods are overloaded. Efforts were made to separate respective mechanisms into different methods. Also, some verification mechanisms were implemented, i.e. hasItem for checking whether a given treasure already exists in the TreasureChest or not, verifyAnswer to map user's answer to proper further actions. As per design one cannot duplicate any treasure in one TreasureChest. When the TreasureChest becomes full, the user is asked whether they would like to replace any of pre-existing treasures with the newly encountered one. The user then also needs to provide the correct name of the chosen to-be-replaced item. If the name does not match any of the pre-existing items, replacement will not take place. You can also remove any treasure from the chest any time you need - by name or by index.</span><span class="expand-collapse">Read more</span></p>
+                <p class="project-description">Simple game based on templates. TreasureChest is a container class for class Treasure objects. The latter has operator<< overloaded to simplify printing the content.<span class="dots">...</span><span class="more"> The underlying container structure for TreasureChest is an array of pointers to Treasure&lt;T&gt; objects. Its size is predefined in treasure.h as a constant value. There are several public operational methods available for the user and some private accessory methods used for underlying mechanisms. Some of the methods are overloaded. Efforts were made to separate respective mechanisms into different methods. Also, some verification mechanisms were implemented, i.e. hasItem for checking whether a given treasure already exists in the TreasureChest or not, verifyAnswer to map user's answer to proper further actions. As per design one cannot duplicate any treasure in one TreasureChest. When the TreasureChest becomes full, the user is asked whether they would like to replace any of pre-existing treasures with the newly encountered one. The user then also needs to provide the correct name of the chosen to-be-replaced item. If the name does not match any of the pre-existing items, replacement will not take place. You can also remove any treasure from the chest any time you need - by name or by index.</span><span class="expand-collapse">Read more</span></p>
             </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div id="wrapper2">
+        <p class="topic-title">Miscellaneous Non-template Based Projects</p>
+        <div class="topic-body">
+            <div>
+                <div class="project-title">
+                    <div><a href="https://github.com/maciej-mazur-github/CPP_Deque-Implementation-Using-Templates" target="_blank">Random Character Generator <br>With File Handling</a></div>
+                    <div class="difficulty-label">Difficulty
+                        <div class="difficulty-level-3"></div>
+                    </div>
+                </div>
+
+                <p class="project-description">Simple exercise in file handling in C++. Function void generateAndSaveInFile() is used to generate 15 random letters (both lower and uppercase).<span class="dots">...</span><span class="more"> cstdlib functions srand() and rand() were used pretty creatively to generate random letters while excluding 6 non-letter characters in between uppercase and lowercase letters in ASCII table. Each properly generated ASCII code is then cast to char variable to allow the program to print actual letters later. Both functions generateAndSaveInFile() and readFromFile() are guarded in case any file handling errors occur during the process. An endless loop has been implemented to run the program until '3' is chosen by the user to quit it. All functions were implemented in a separate file (random_character_generator.cpp) to make the code look clearer. No class encapsulation was used in this program.</span><span class="expand-collapse">Read more</span></p>
+            </div>
+
+
 
 
         </div>
