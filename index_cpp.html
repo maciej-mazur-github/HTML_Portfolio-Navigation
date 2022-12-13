@@ -525,6 +525,18 @@
 
             <div>
                 <div class="project-title">
+                    <div><a href="https://github.com/maciej-mazur-github/CPP_Chessboard-Of-Letters" target="_blank">Chessboard Of Letters</a></div>
+                    <div class="difficulty-label">Difficulty
+                        <div class="difficulty-level-4"></div>
+                    </div>
+                </div>
+
+                <p class="project-description">Pretty nice program letting the user insert any letter into the chessboard. The chessboard actually is a 2D array operated on by the pointer to pointer to char variable<span class="dots">...</span><span class="more"> (char**). It is initially filled in with 64 characters '_'. There is also another pointer to pointer to char used (figuresPtr). This one points to 64-element array of pointers to char objects. The latter ones will point at the actual objects inserted in the chessboard (in terms of addresses in memory). The last char** (fieldsPtr) is used to point to a 64-element array of pointers, each of which will later point to 2-element array of char objects reflecting the coordinates of a given field where the corresponding figure (letter) will be inserted to. These pointers figuresPtr and fieldsPtr are very useful for printing out only the taken chessboard fields and their figures. The method printChessBoard() prints the current chessboard status in a way reflecting the actual chessboard. Inserting consecutive figures/letters is based on an infinite loop that the user can only stop by pressing 'x' (or 'X') at any point. The code is also guarded against entering any other characters except for a-h as for column number, except for 1-8 as for row number and except for all letters (both upper and lower case) as of chessboard figures. At any of these points whenever the invalid character is entered by the user, the proper message will be printed on the screen and the user will be moved back to being asked again about chosen field coordinates. Also, the user will not be allowed to insert a new figure/letter at the position that is already taken.</span><span class="expand-collapse">Read more</span></p>
+            </div>
+
+
+            <div>
+                <div class="project-title">
                     <div><a href="https://github.com/maciej-mazur-github/CPP_Random-Character-Generator-With-File-Handling" target="_blank">Random Character Generator <br>With File Handling</a></div>
                     <div class="difficulty-label">Difficulty
                         <div class="difficulty-level-3"></div>
